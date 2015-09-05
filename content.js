@@ -20,7 +20,7 @@
   }
 
   var check = setInterval(function () {
-    if (window.logo === undefined) {
+    if (window.logo !== undefined) {
       clearInterval(check);
       replaceLogoImage(window.logo);
     }
